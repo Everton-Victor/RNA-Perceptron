@@ -28,10 +28,10 @@ Um Perceptron consiste em um único neurônio com múltiplas entradas e uma úni
 
     $$\Delta w_i = \eta (d - y) x_i$$
 
-    Aqui, $\eta$ é a taxa de aprendizado, $d$ é a saída desejada, $y$ é a saída calculada e $x_i$ é a entrada correspondente.
+    Aqui, $\eta$ é a taxa de aprendizagem, $d$ é a saída desejada, $y$ é a saída calculada e $x_i$ é a entrada correspondente.
 
 ### Exemplo 
- 
+
 Suponha que tenhamos um Perceptron com duas entradas $(x_1)$ e $(x_2)$ e queremos treinar para reconhecer a porta lógica AND. Os dados de treinamento seriam:
 
 | $(x_1)$ | $(x_2)$ | saída esperada |
@@ -43,12 +43,21 @@ Suponha que tenhamos um Perceptron com duas entradas $(x_1)$ e $(x_2)$ e queremo
 
 Inicializamos os pesos e o bias (ex.: ($w_1$ = 0.1), ($w_2$ = 0.2), ($b$ = 0.1)). Durante o treinamento, ajustamos os pesos até que o Perceptron consiga classificar corretamente todos os exemplos de treinamento.
 
-### Limitações
+### Código em JavaScript
 
-- **Linearidade:** O Perceptron só consegue resolver problemas que são linearmente separáveis.
-- **Convergência:** O algoritmo de aprendizado do Perceptron garante a convergência apenas se os dados forem linearmente separáveis.
+O código implementa um Perceptron em JavaScript para treinar e testar um modelo de rede neural artificial para reconhecimento de padrões
 
-### Conclusão
+### Como Usar
 
-Embora o Perceptron tenha limitações, ele é fundamental para o entendimento de redes neurais mais avançadas. Ele introduz conceitos importantes como pesos, bias, funções de ativação e aprendizado supervisionado.
+1. **Requisitos**: Certifique-se de ter o Node.js instalado.
+2. **Execução**: Execute o código em um ambiente Node.js. Ele guiará você através das entradas necessárias e mostrará os resultados do treinamento e dos testes.
 
+### Explicação do Código
+
+O código implementa um Perceptron em JavaScript utilizando a biblioteca readline para capturar entradas do usuário. Aqui estão as funções principais:
+
+- **`inputEntradas()`**, **`inputEntradasAposTreinamento()`**, **`inputPesos()`**, **`inputTaxaAprendizagem()`**: Funções assíncronas para capturar diferentes tipos de entradas do usuário.
+- **`fnet(entrada, pesos)`**: Calcula a entrada ponderada $z$ do Perceptron.
+- **`saida(result)`**: Aplica a função de ativação do Perceptron.
+- **`novosPesos(entrada, taxa_aprendizagem, saida, pesos)`**: Atualiza os pesos do Perceptron com base no erro.
+- **`main()`**: Função principal que coordena o treinamento
