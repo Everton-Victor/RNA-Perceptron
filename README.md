@@ -34,7 +34,7 @@ Um Perceptron consiste em um único neurônio com múltiplas entradas e uma úni
 
 Suponha que tenhamos um Perceptron com duas entradas $(x_1)$ e $(x_2)$ e queremos treinar para reconhecer a porta lógica AND. Os dados de treinamento seriam:
 
-| $(x_1)$ | $(x_2)$ | saída esperada |
+| $x_1$   | $x_2$   | saída esperada |
 |---------|---------|----------------|
 | 0       | 0       | 0              |
 | 0       | 1       | 0              |
