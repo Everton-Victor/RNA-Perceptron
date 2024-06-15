@@ -47,10 +47,23 @@ Inicializamos os pesos e o bias (ex.: ($w_1$ = 0.1), ($w_2$ = 0.2), ($b$ = 0.1))
 
 O código implementa um Perceptron em JavaScript para treinar e testar um modelo de rede neural artificial para reconhecimento de padrões
 
-### Como Usar
+### Execução
 
-1. **Requisitos**: Certifique-se de ter o Node.js instalado.
-2. **Execução**: Execute o código em um ambiente Node.js. Ele guiará você através das entradas necessárias e mostrará os resultados do treinamento e dos testes.
+Para executar o código, siga os passos abaixo:
+
+1. **Requisitos**: Certifique-se de ter o Node.js instalado em seu sistema.
+   
+2. **Comando de Execução**: Abra o terminal ou prompt de comando, navegue até o diretório onde o arquivo `perceptron.js` está localizado e execute o comando:
+
+   ```
+   node perceptron.js
+   ```
+
+   Isso iniciará a execução do código em um ambiente Node.js.
+
+3. **Instruções durante a Execução**: O programa irá solicitar que você insira os valores de entrada necessários para treinamento e teste do Perceptron.
+
+4. **Resultados**: Ao final da execução, o programa exibirá os pesos finais ajustados pelo Perceptron e permitirá testar novos valores de entrada para verificar o desempenho do modelo treinado.
 
 ### Explicação do Código
 
